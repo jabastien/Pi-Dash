@@ -1,0 +1,479 @@
+\hypertarget{classuser_sign_in}{}\section{user\+Sign\+In Class Reference}
+\label{classuser_sign_in}\index{user\+Sign\+In@{user\+Sign\+In}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classuser_sign_in_aadda1c072fd82f92a63aeec71410669f}{user\+Sign\+In}} ()
+\begin{DoxyCompactList}\small\item\em Handles the sign in functionality for the widgets  Creates a \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} instance object with no data set  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classuser_sign_in_a206594360b0e235dad6b7d9bdb315216}{user\+Sign\+In}} (string, string)
+\begin{DoxyCompactList}\small\item\em Handles sign in functionality when given a username and password  Signs the user in when the inputs match the username and passwords outlined in user\+Data.\+txt  String username, String password. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classuser_sign_in_a179a4991b9e103b2fb422f25f520fe1b}{user\+Sign\+In}} (string, string, string, string, string, string, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Handles the sign in functionality when a new user is created  Checks if the username and password exist, if not this will create a user object that has its preferences set and written to the user\+Data.\+txt file  String username, String password, String name, String city, String country, string time\+Zone, int finance, int weather, int news, int date. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classuser_sign_in_a3a005bfb5efd54a7b9785fc39492ae4d}{$\sim$user\+Sign\+In}} ()
+\begin{DoxyCompactList}\small\item\em Default empty destructor for \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}}  Destroys \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} in memory  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_a7128c36d84156e792b55c9df6acf1bc8}{set\+User\+Name}} (string)
+\begin{DoxyCompactList}\small\item\em Handles the set\+User\+Name functionality for the user  Sets the username based on the user\textquotesingle{}s input  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_abaff4cd88aa403e831a7126abb5d63f2}{set\+Password}} (string)
+\begin{DoxyCompactList}\small\item\em Handles the set\+Password functionality for the user  Sets the password based on the user\textquotesingle{}s input  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_a7d75bf1b3bb7dcaa50e4f633050b7081}{get\+Sign\+In\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Handles the functionality to tell if the user is logged in  Should return an int if the user is signed in (0) , negative values are reserved for errors  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_a6c80ee2fa758b708c3a1e660601d700f}{get\+User\+Exists}} (string)
+\begin{DoxyCompactList}\small\item\em Handles the get\+User\+Exists functionality for the user  This is used during the user registratin process to determine whether or not the username exists in the text file  Takes a string username. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_sign_in_a55ce850b1e8384f006864a8ba337b73a}{get\+User\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+User\+Name functionality for the user  Gets the user\+Name and stores it as a string  Takes no parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_sign_in_a993651684c3af6d06869d30d62decbbd}{get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+Password functionality for the user  Gets the password and stores it as a string  Takes no parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_sign_in_a6b0ff4eb19a71e5f891da4c779aa2027}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+Name functionality for the user  Gets the name and stores it as a string  Takes no parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_sign_in_a56eae654d96ddc6d8b948d3ba24bbcd9}{get\+Country}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+Country functionality for the user  Gets the country and stores it as a string  Takes no parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_sign_in_ac79d85051634716b43ff1cbc01df1433}{get\+City}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+City functionality for the user  Gets the city and stores it as a string  Takes no parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_sign_in_ae12adda30b996b9b72f1df55c93f2d2c}{get\+Time\+Zone}} ()
+\begin{DoxyCompactList}\small\item\em Handles the time\+Zone functionality for the user  Gets the time\+Zone and stores it as a string  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_a12d39d46c20c4c1af66f5077166d6f24}{get\+Finance}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+Finance functionality for the user  Gets the finance widget status and stores it as an int  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_a1b7a9edee0062900153cbba2162e65da}{get\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+Weather functionality for the user  Gets the weather widget status and stores it as an int  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_a6a22de24799069874818c381a9764bb7}{get\+News}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+News functionality for the user  Gets the news widget status and stores it as an int  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_ab6980000d41f064c48c751d7ff9a0cd8}{get\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Handles the get\+Date functionality for the user  Gets the date widget status and stores it as an int  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_preferences}{Preferences}} \mbox{\hyperlink{classuser_sign_in_aaaa506b746cbef56014006a673b239d7}{get\+Preference}} ()
+\begin{DoxyCompactList}\small\item\em Gets the user preferences  Gets a preference object that stores all user preferences  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_a2c60d720f5c473379048f7339faa3bf1}{change\+Name}} (string new\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the user set name depending on the passed parameter  Sets the user set name based on the new\+City string input  int new\+Name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_a81a17024250723ca6f6a51417f46db15}{change\+Country}} (string new\+Country)
+\begin{DoxyCompactList}\small\item\em Sets the user set country depending on the passed parameter  Sets the user set country based on the new\+City string input  int new\+Country. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_ab6ad3c051be80088c9ac4df4a48c02c6}{change\+City}} (string new\+City)
+\begin{DoxyCompactList}\small\item\em Sets the user set city depending on the passed parameter  Sets the user set city based on the new\+City string input  int new\+City. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_a0a8353698be1f010c3365b119c6c6ed6}{turn\+Finance}} (int status)
+\begin{DoxyCompactList}\small\item\em Sets the Finance Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the Finance Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_afa427a5204b4ded7f066963439180e6c}{turn\+Weather}} (int status)
+\begin{DoxyCompactList}\small\item\em Sets the Weather Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the Weather Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_a6a95bd7b610abe178da1254e0234c858}{turn\+News}} (int status)
+\begin{DoxyCompactList}\small\item\em Sets the News Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the News Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_sign_in_a3d0909776d239ff774fd4134e6bd43ad}{turn\+Date}} (int status)
+\begin{DoxyCompactList}\small\item\em Sets the Time\+And\+Date Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the Time\+And\+Date Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_sign_in_a9f9208482f5897e06a06be400d80bebe}{write\+To\+File}} ()
+\begin{DoxyCompactList}\small\item\em Writes items to the file that is updated by the user  Gets a preference object that stores all user preferences  Takes no parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classuser_sign_in_aadda1c072fd82f92a63aeec71410669f}\label{classuser_sign_in_aadda1c072fd82f92a63aeec71410669f}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\index{user\+Sign\+In@{user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{user\+Sign\+In()}{userSignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily user\+Sign\+In\+::user\+Sign\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the sign in functionality for the widgets  Creates a \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} instance object with no data set  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An a \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a206594360b0e235dad6b7d9bdb315216}\label{classuser_sign_in_a206594360b0e235dad6b7d9bdb315216}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\index{user\+Sign\+In@{user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{user\+Sign\+In()}{userSignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily user\+Sign\+In\+::user\+Sign\+In (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Handles sign in functionality when given a username and password  Signs the user in when the inputs match the username and passwords outlined in user\+Data.\+txt  String username, String password. 
+
+\begin{DoxyReturn}{Returns}
+An a \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a179a4991b9e103b2fb422f25f520fe1b}\label{classuser_sign_in_a179a4991b9e103b2fb422f25f520fe1b}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\index{user\+Sign\+In@{user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{user\+Sign\+In()}{userSignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily user\+Sign\+In\+::user\+Sign\+In (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{name,  }\item[{string}]{city,  }\item[{string}]{country,  }\item[{string}]{time\+Zone,  }\item[{int}]{finance,  }\item[{int}]{weather,  }\item[{int}]{news,  }\item[{int}]{date }\end{DoxyParamCaption})}
+
+
+
+Handles the sign in functionality when a new user is created  Checks if the username and password exist, if not this will create a user object that has its preferences set and written to the user\+Data.\+txt file  String username, String password, String name, String city, String country, string time\+Zone, int finance, int weather, int news, int date. 
+
+\begin{DoxyReturn}{Returns}
+An a \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a3a005bfb5efd54a7b9785fc39492ae4d}\label{classuser_sign_in_a3a005bfb5efd54a7b9785fc39492ae4d}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!````~user\+Sign\+In@{$\sim$user\+Sign\+In}}
+\index{````~user\+Sign\+In@{$\sim$user\+Sign\+In}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{$\sim$user\+Sign\+In()}{~userSignIn()}}
+{\footnotesize\ttfamily user\+Sign\+In\+::$\sim$user\+Sign\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty destructor for \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}}  Destroys \mbox{\hyperlink{classuser_sign_in}{user\+Sign\+In}} in memory  Takes no parameters. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classuser_sign_in_ab6ad3c051be80088c9ac4df4a48c02c6}\label{classuser_sign_in_ab6ad3c051be80088c9ac4df4a48c02c6}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!change\+City@{change\+City}}
+\index{change\+City@{change\+City}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{change\+City()}{changeCity()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::change\+City (\begin{DoxyParamCaption}\item[{string}]{new\+City }\end{DoxyParamCaption})}
+
+
+
+Sets the user set city depending on the passed parameter  Sets the user set city based on the new\+City string input  int new\+City. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a81a17024250723ca6f6a51417f46db15}\label{classuser_sign_in_a81a17024250723ca6f6a51417f46db15}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!change\+Country@{change\+Country}}
+\index{change\+Country@{change\+Country}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{change\+Country()}{changeCountry()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::change\+Country (\begin{DoxyParamCaption}\item[{string}]{new\+Country }\end{DoxyParamCaption})}
+
+
+
+Sets the user set country depending on the passed parameter  Sets the user set country based on the new\+City string input  int new\+Country. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a2c60d720f5c473379048f7339faa3bf1}\label{classuser_sign_in_a2c60d720f5c473379048f7339faa3bf1}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!change\+Name@{change\+Name}}
+\index{change\+Name@{change\+Name}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{change\+Name()}{changeName()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::change\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+Name }\end{DoxyParamCaption})}
+
+
+
+Sets the user set name depending on the passed parameter  Sets the user set name based on the new\+City string input  int new\+Name. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_ac79d85051634716b43ff1cbc01df1433}\label{classuser_sign_in_ac79d85051634716b43ff1cbc01df1433}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+City@{get\+City}}
+\index{get\+City@{get\+City}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+City()}{getCity()}}
+{\footnotesize\ttfamily string user\+Sign\+In\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+City functionality for the user  Gets the city and stores it as a string  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the city 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a56eae654d96ddc6d8b948d3ba24bbcd9}\label{classuser_sign_in_a56eae654d96ddc6d8b948d3ba24bbcd9}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Country@{get\+Country}}
+\index{get\+Country@{get\+Country}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Country()}{getCountry()}}
+{\footnotesize\ttfamily string user\+Sign\+In\+::get\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+Country functionality for the user  Gets the country and stores it as a string  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the country 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_ab6980000d41f064c48c751d7ff9a0cd8}\label{classuser_sign_in_ab6980000d41f064c48c751d7ff9a0cd8}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+Date functionality for the user  Gets the date widget status and stores it as an int  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An int that is the date widget status 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a12d39d46c20c4c1af66f5077166d6f24}\label{classuser_sign_in_a12d39d46c20c4c1af66f5077166d6f24}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Finance@{get\+Finance}}
+\index{get\+Finance@{get\+Finance}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Finance()}{getFinance()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::get\+Finance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+Finance functionality for the user  Gets the finance widget status and stores it as an int  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An int that is the finance widget status 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a6b0ff4eb19a71e5f891da4c779aa2027}\label{classuser_sign_in_a6b0ff4eb19a71e5f891da4c779aa2027}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string user\+Sign\+In\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+Name functionality for the user  Gets the name and stores it as a string  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the name 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a6a22de24799069874818c381a9764bb7}\label{classuser_sign_in_a6a22de24799069874818c381a9764bb7}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+News@{get\+News}}
+\index{get\+News@{get\+News}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+News()}{getNews()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::get\+News (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+News functionality for the user  Gets the news widget status and stores it as an int  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An int that is the news widget status 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a993651684c3af6d06869d30d62decbbd}\label{classuser_sign_in_a993651684c3af6d06869d30d62decbbd}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily string user\+Sign\+In\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+Password functionality for the user  Gets the password and stores it as a string  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the password 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_aaaa506b746cbef56014006a673b239d7}\label{classuser_sign_in_aaaa506b746cbef56014006a673b239d7}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Preference@{get\+Preference}}
+\index{get\+Preference@{get\+Preference}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Preference()}{getPreference()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_preferences}{Preferences}} user\+Sign\+In\+::get\+Preference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the user preferences  Gets a preference object that stores all user preferences  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A preference object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a7d75bf1b3bb7dcaa50e4f633050b7081}\label{classuser_sign_in_a7d75bf1b3bb7dcaa50e4f633050b7081}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Sign\+In\+Status@{get\+Sign\+In\+Status}}
+\index{get\+Sign\+In\+Status@{get\+Sign\+In\+Status}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Sign\+In\+Status()}{getSignInStatus()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::get\+Sign\+In\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the functionality to tell if the user is logged in  Should return an int if the user is signed in (0) , negative values are reserved for errors  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An int that is 0 for success, -\/1 for incorrect password, and -\/2 for no username exists 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_ae12adda30b996b9b72f1df55c93f2d2c}\label{classuser_sign_in_ae12adda30b996b9b72f1df55c93f2d2c}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Time\+Zone@{get\+Time\+Zone}}
+\index{get\+Time\+Zone@{get\+Time\+Zone}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Time\+Zone()}{getTimeZone()}}
+{\footnotesize\ttfamily string user\+Sign\+In\+::get\+Time\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the time\+Zone functionality for the user  Gets the time\+Zone and stores it as a string  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the time\+Zone 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a6c80ee2fa758b708c3a1e660601d700f}\label{classuser_sign_in_a6c80ee2fa758b708c3a1e660601d700f}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+User\+Exists@{get\+User\+Exists}}
+\index{get\+User\+Exists@{get\+User\+Exists}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+User\+Exists()}{getUserExists()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::get\+User\+Exists (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+User\+Exists functionality for the user  This is used during the user registratin process to determine whether or not the username exists in the text file  Takes a string username. 
+
+\begin{DoxyReturn}{Returns}
+An int that determines if the user exists, -\/1 for no, 1 for file read error, and 0 for user does not exist 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a55ce850b1e8384f006864a8ba337b73a}\label{classuser_sign_in_a55ce850b1e8384f006864a8ba337b73a}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+User\+Name@{get\+User\+Name}}
+\index{get\+User\+Name@{get\+User\+Name}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+User\+Name()}{getUserName()}}
+{\footnotesize\ttfamily string user\+Sign\+In\+::get\+User\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+User\+Name functionality for the user  Gets the user\+Name and stores it as a string  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the user\+Name 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a1b7a9edee0062900153cbba2162e65da}\label{classuser_sign_in_a1b7a9edee0062900153cbba2162e65da}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!get\+Weather@{get\+Weather}}
+\index{get\+Weather@{get\+Weather}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{get\+Weather()}{getWeather()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the get\+Weather functionality for the user  Gets the weather widget status and stores it as an int  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An int that is the weather widget status 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_abaff4cd88aa403e831a7126abb5d63f2}\label{classuser_sign_in_abaff4cd88aa403e831a7126abb5d63f2}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::set\+Password (\begin{DoxyParamCaption}\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Handles the set\+Password functionality for the user  Sets the password based on the user\textquotesingle{}s input  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the new set set\+Password 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a7128c36d84156e792b55c9df6acf1bc8}\label{classuser_sign_in_a7128c36d84156e792b55c9df6acf1bc8}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!set\+User\+Name@{set\+User\+Name}}
+\index{set\+User\+Name@{set\+User\+Name}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{set\+User\+Name()}{setUserName()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::set\+User\+Name (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Handles the set\+User\+Name functionality for the user  Sets the username based on the user\textquotesingle{}s input  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the new set set\+User\+Name 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a3d0909776d239ff774fd4134e6bd43ad}\label{classuser_sign_in_a3d0909776d239ff774fd4134e6bd43ad}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!turn\+Date@{turn\+Date}}
+\index{turn\+Date@{turn\+Date}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{turn\+Date()}{turnDate()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::turn\+Date (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the Time\+And\+Date Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the Time\+And\+Date Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a0a8353698be1f010c3365b119c6c6ed6}\label{classuser_sign_in_a0a8353698be1f010c3365b119c6c6ed6}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!turn\+Finance@{turn\+Finance}}
+\index{turn\+Finance@{turn\+Finance}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{turn\+Finance()}{turnFinance()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::turn\+Finance (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the Finance Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the Finance Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a6a95bd7b610abe178da1254e0234c858}\label{classuser_sign_in_a6a95bd7b610abe178da1254e0234c858}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!turn\+News@{turn\+News}}
+\index{turn\+News@{turn\+News}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{turn\+News()}{turnNews()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::turn\+News (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the News Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the News Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_afa427a5204b4ded7f066963439180e6c}\label{classuser_sign_in_afa427a5204b4ded7f066963439180e6c}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!turn\+Weather@{turn\+Weather}}
+\index{turn\+Weather@{turn\+Weather}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{turn\+Weather()}{turnWeather()}}
+{\footnotesize\ttfamily void user\+Sign\+In\+::turn\+Weather (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the Weather Widget to on or off depending on the user\textquotesingle{}s preferences  Sets the Weather Widget based on the status input which will be 1 for on and 0 for off  int status which is 1 or 0. 
+
+\begin{DoxyAuthor}{Author}
+Chao Chao 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classuser_sign_in_a9f9208482f5897e06a06be400d80bebe}\label{classuser_sign_in_a9f9208482f5897e06a06be400d80bebe}} 
+\index{user\+Sign\+In@{user\+Sign\+In}!write\+To\+File@{write\+To\+File}}
+\index{write\+To\+File@{write\+To\+File}!user\+Sign\+In@{user\+Sign\+In}}
+\subsubsection{\texorpdfstring{write\+To\+File()}{writeToFile()}}
+{\footnotesize\ttfamily int user\+Sign\+In\+::write\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Writes items to the file that is updated by the user  Gets a preference object that stores all user preferences  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An integer upon success or failure 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+user\+Sign\+In.\+h\item 
+user\+Sign\+In.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,268 @@
+\hypertarget{class_main_interface}{}\section{Main\+Interface Class Reference}
+\label{class_main_interface}\index{Main\+Interface@{Main\+Interface}}
+
+
+A header containing the public functions and private variables in the Main Interface instance  An overview of the structures behind the Main\+Interface.\+cpp file  Takes multiple -\/ outlined in the Main\+Interface.\+cpp documentation.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_interface_a0f52860dc811962028162a5842b796fc}{Main\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Default empty constructor for Main Interface  Creates an empty Main Interface as the default configuration  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_interface_a30816483adcca651a0a01a232749e8ea}{$\sim$\+Main\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Default empty destructor for Main Interface  Destroys Main Interface in memory  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a8d6a94e88513e86f5dcbadf741bcac8b}{welcome\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Creates the welcome\+Screen using ncurses  Sets the windows and draws the front-\/end using A\+S\+C\+II and positioning  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a49a0a59ee12a2753ffe542f935e5b0fe}{login\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Creates the login\+Screen using ncurses  Sets the windows and draws the front-\/end login\+Screen with a form to get the user\+Name and password from the user  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a27867852cb6204a224608e273113fcec}{login\+Helper}} (int)
+\begin{DoxyCompactList}\small\item\em Allows for a login helper that determines if the user\textquotesingle{}s information is valid and pushes the function through the login stage  Allows the user to login and based on the user\textquotesingle{}s inputs may exit, enter, or quit the program entirely  char ch is the user\textquotesingle{}s keystroke input which is monitored against the system options. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a2453e08da319d026a2ef0b724b445928}{register\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Creates the registration\+Screen using ncurses  Sets the windows and draws the front-\/end registration\+Screen with a form to get the user\+Name, Password, City, Country Code, Etc from the user  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a4c5fbc56836bf55dda9cf809dd11f147}{register\+Helper}} (int)
+\begin{DoxyCompactList}\small\item\em Allows for a register helper that determines if the user\textquotesingle{}s information is valid and pushes the function through the register stage  Allows the user to register and based on the user\textquotesingle{}s inputs may exit, enter, or quit the program entirely  char ch is the user\textquotesingle{}s keystroke input which is monitored against the system options. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_main_interface_a8ab8c45d7aa780c1c8f0f6c40c15c133}{trim\+\_\+whitespaces}} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Trims the whitespaces before and after the user entry  Deletes whitespaces from before and after the form entries in order to not store things that are too large  char str, takes a string in order to trim the whitespaces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a8dcd81276003c4d4693115d89da573ca}{dashboard\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Draws the main dashboard window that will contain the widgets  Shows the main dashboard which will be the central location in which users can access widgets  none. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_ae72bd29c04edb558852887aef9d91ccf}{weather\+Widget\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Draws the weather widget screen that wull show the weather information  Shows the weather widget screen that will give the users options within the widget for current and five day forecasts  none. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a34de3c148d9a99f336111ee9c4ba87e0}{stock\+Widget\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Draws the stock widget screen that wull show the stock information  Shows the stock widget screen that will give the users options to get a list of top stocks and user entries  none. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_aca2ed8a09e281148a1e3d45299384885}{news\+Widget\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Draws the news widget screen that will show the news information  Shows the news widget screen that will give the users options to get a list of top stocks and user entries  none. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_interface_a1ed374c9076deb2d73626122825bb6f2}{time\+And\+Date\+Widget\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Draws the time and date widget screen that will show the time and date information  Shows the time and date widget screen that will give show the time and date based on the user\textquotesingle{}s current set location  none. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A header containing the public functions and private variables in the Main Interface instance  An overview of the structures behind the Main\+Interface.\+cpp file  Takes multiple -\/ outlined in the Main\+Interface.\+cpp documentation. 
+
+\begin{DoxyReturn}{Returns}
+Many (see Main\+Interface.\+cpp for more information) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_interface_a0f52860dc811962028162a5842b796fc}\label{class_main_interface_a0f52860dc811962028162a5842b796fc}} 
+\index{Main\+Interface@{Main\+Interface}!Main\+Interface@{Main\+Interface}}
+\index{Main\+Interface@{Main\+Interface}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{Main\+Interface()}{MainInterface()}}
+{\footnotesize\ttfamily Main\+Interface\+::\+Main\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty constructor for Main Interface  Creates an empty Main Interface as the default configuration  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An Empty Main Interface 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a30816483adcca651a0a01a232749e8ea}\label{class_main_interface_a30816483adcca651a0a01a232749e8ea}} 
+\index{Main\+Interface@{Main\+Interface}!````~Main\+Interface@{$\sim$\+Main\+Interface}}
+\index{````~Main\+Interface@{$\sim$\+Main\+Interface}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Interface()}{~MainInterface()}}
+{\footnotesize\ttfamily Main\+Interface\+::$\sim$\+Main\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty destructor for Main Interface  Destroys Main Interface in memory  Takes no parameters. 
+
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_interface_a8dcd81276003c4d4693115d89da573ca}\label{class_main_interface_a8dcd81276003c4d4693115d89da573ca}} 
+\index{Main\+Interface@{Main\+Interface}!dashboard\+Screen@{dashboard\+Screen}}
+\index{dashboard\+Screen@{dashboard\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{dashboard\+Screen()}{dashboardScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::dashboard\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the main dashboard window that will contain the widgets  Shows the main dashboard which will be the central location in which users can access widgets  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Calls other functions and displays widgets through their own window functions 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a27867852cb6204a224608e273113fcec}\label{class_main_interface_a27867852cb6204a224608e273113fcec}} 
+\index{Main\+Interface@{Main\+Interface}!login\+Helper@{login\+Helper}}
+\index{login\+Helper@{login\+Helper}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{login\+Helper()}{loginHelper()}}
+{\footnotesize\ttfamily void Main\+Interface\+::login\+Helper (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})}
+
+
+
+Allows for a login helper that determines if the user\textquotesingle{}s information is valid and pushes the function through the login stage  Allows the user to login and based on the user\textquotesingle{}s inputs may exit, enter, or quit the program entirely  char ch is the user\textquotesingle{}s keystroke input which is monitored against the system options. 
+
+\begin{DoxyReturn}{Returns}
+void. Calls other functions and displays things like error messages if the user password is incorrect, etc 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a49a0a59ee12a2753ffe542f935e5b0fe}\label{class_main_interface_a49a0a59ee12a2753ffe542f935e5b0fe}} 
+\index{Main\+Interface@{Main\+Interface}!login\+Screen@{login\+Screen}}
+\index{login\+Screen@{login\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{login\+Screen()}{loginScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::login\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the login\+Screen using ncurses  Sets the windows and draws the front-\/end login\+Screen with a form to get the user\+Name and password from the user  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+void. Does call the form window functions to store the user\+Name and password Also draws an A\+S\+C\+II style header for the login screen as a UI element 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_aca2ed8a09e281148a1e3d45299384885}\label{class_main_interface_aca2ed8a09e281148a1e3d45299384885}} 
+\index{Main\+Interface@{Main\+Interface}!news\+Widget\+Screen@{news\+Widget\+Screen}}
+\index{news\+Widget\+Screen@{news\+Widget\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{news\+Widget\+Screen()}{newsWidgetScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::news\+Widget\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the news widget screen that will show the news information  Shows the news widget screen that will give the users options to get a list of top stocks and user entries  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Calls the news\+Widget functions within the News\+Widget.\+cpp class to pull information 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a4c5fbc56836bf55dda9cf809dd11f147}\label{class_main_interface_a4c5fbc56836bf55dda9cf809dd11f147}} 
+\index{Main\+Interface@{Main\+Interface}!register\+Helper@{register\+Helper}}
+\index{register\+Helper@{register\+Helper}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{register\+Helper()}{registerHelper()}}
+{\footnotesize\ttfamily void Main\+Interface\+::register\+Helper (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})}
+
+
+
+Allows for a register helper that determines if the user\textquotesingle{}s information is valid and pushes the function through the register stage  Allows the user to register and based on the user\textquotesingle{}s inputs may exit, enter, or quit the program entirely  char ch is the user\textquotesingle{}s keystroke input which is monitored against the system options. 
+
+\begin{DoxyReturn}{Returns}
+void. Calls other functions and displays things like error messages if the information is blank, user\+Name already exists, etc 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a2453e08da319d026a2ef0b724b445928}\label{class_main_interface_a2453e08da319d026a2ef0b724b445928}} 
+\index{Main\+Interface@{Main\+Interface}!register\+Screen@{register\+Screen}}
+\index{register\+Screen@{register\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{register\+Screen()}{registerScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::register\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the registration\+Screen using ncurses  Sets the windows and draws the front-\/end registration\+Screen with a form to get the user\+Name, Password, City, Country Code, Etc from the user  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+void. Does call the form window functions to store the user\+Name, password, name, country character code Also draws an A\+S\+C\+II style header for the login screen as a UI element 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a34de3c148d9a99f336111ee9c4ba87e0}\label{class_main_interface_a34de3c148d9a99f336111ee9c4ba87e0}} 
+\index{Main\+Interface@{Main\+Interface}!stock\+Widget\+Screen@{stock\+Widget\+Screen}}
+\index{stock\+Widget\+Screen@{stock\+Widget\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{stock\+Widget\+Screen()}{stockWidgetScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::stock\+Widget\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the stock widget screen that wull show the stock information  Shows the stock widget screen that will give the users options to get a list of top stocks and user entries  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Calls the stock\+Widget functions within the Stock\+Widget.\+cpp class to pull information 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a1ed374c9076deb2d73626122825bb6f2}\label{class_main_interface_a1ed374c9076deb2d73626122825bb6f2}} 
+\index{Main\+Interface@{Main\+Interface}!time\+And\+Date\+Widget\+Screen@{time\+And\+Date\+Widget\+Screen}}
+\index{time\+And\+Date\+Widget\+Screen@{time\+And\+Date\+Widget\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{time\+And\+Date\+Widget\+Screen()}{timeAndDateWidgetScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::time\+And\+Date\+Widget\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the time and date widget screen that will show the time and date information  Shows the time and date widget screen that will give show the time and date based on the user\textquotesingle{}s current set location  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Creates Time\+And\+Date\+Widget object and performs operations on it to display time and date based on the user\textquotesingle{}s current location 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a8ab8c45d7aa780c1c8f0f6c40c15c133}\label{class_main_interface_a8ab8c45d7aa780c1c8f0f6c40c15c133}} 
+\index{Main\+Interface@{Main\+Interface}!trim\+\_\+whitespaces@{trim\+\_\+whitespaces}}
+\index{trim\+\_\+whitespaces@{trim\+\_\+whitespaces}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{trim\+\_\+whitespaces()}{trim\_whitespaces()}}
+{\footnotesize\ttfamily char $\ast$ Main\+Interface\+::trim\+\_\+whitespaces (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Trims the whitespaces before and after the user entry  Deletes whitespaces from before and after the form entries in order to not store things that are too large  char str, takes a string in order to trim the whitespaces. 
+
+\begin{DoxyReturn}{Returns}
+The string that has been trimmed of whitespaces 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_ae72bd29c04edb558852887aef9d91ccf}\label{class_main_interface_ae72bd29c04edb558852887aef9d91ccf}} 
+\index{Main\+Interface@{Main\+Interface}!weather\+Widget\+Screen@{weather\+Widget\+Screen}}
+\index{weather\+Widget\+Screen@{weather\+Widget\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{weather\+Widget\+Screen()}{weatherWidgetScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::weather\+Widget\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the weather widget screen that wull show the weather information  Shows the weather widget screen that will give the users options within the widget for current and five day forecasts  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Calls other functions and displays widgets through their own window functions 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_interface_a8d6a94e88513e86f5dcbadf741bcac8b}\label{class_main_interface_a8d6a94e88513e86f5dcbadf741bcac8b}} 
+\index{Main\+Interface@{Main\+Interface}!welcome\+Screen@{welcome\+Screen}}
+\index{welcome\+Screen@{welcome\+Screen}!Main\+Interface@{Main\+Interface}}
+\subsubsection{\texorpdfstring{welcome\+Screen()}{welcomeScreen()}}
+{\footnotesize\ttfamily void Main\+Interface\+::welcome\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the welcome\+Screen using ncurses  Sets the windows and draws the front-\/end using A\+S\+C\+II and positioning  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+void. Does call the login function, register function, or exits based on user selection 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Main\+Interface.\+h\item 
+Main\+Interface.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{class_stock_widget}{}\section{Stock\+Widget Class Reference}
+\label{class_stock_widget}\index{Stock\+Widget@{Stock\+Widget}}
+
+
+A class containing the public functions and private variables in the Stock Widget objects  An overview of the structures behind the Stock\+Widget.\+cpp file  Takes multiple -\/ outlined in the Stock\+Widget.\+cpp documentation.  
+
+
+
+
+{\ttfamily \#include $<$Stock\+Widget.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stock_widget_aa2748d2e00f0e4b91e1aea0faccba2f1}{Stock\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty constructor for Stock Widget  Creates an empty Stock Widget as the default widget configuration  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stock_widget_a71739ffb4f0a718ff12203c2d30421ce}\label{class_stock_widget_a71739ffb4f0a718ff12203c2d30421ce}} 
+{\bfseries Stock\+Widget} (std\+::string, int, std\+::string)
+\item 
+\mbox{\hyperlink{class_stock_widget_a439ffbe3e2ebbd7e0760ee10156448b5}{$\sim$\+Stock\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty destructor for Stock Widget  Destroys Stock Widget in memory  Takes no parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stock_widget_ad2db18f7104a367ddc9fe56d019249cb}{get\+Stock\+Widget\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  A getter function to return the name of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_stock_widget_ab29e0ec75f29ecc1b1a16423de40ac46}{get\+Stock\+Widget\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Returns the ID of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  A getter function to return the ID of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stock_widget_a69debafcc6d655a83e4e3af67a78e8c3}{get\+Stock\+Symbol}} ()
+\begin{DoxyCompactList}\small\item\em Returns the symbol called by the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  A getter function to return the stock symbol of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stock_widget_ad053fb0af2da4413c337771fa083bc07}{get\+Stock\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Returns the stock price from the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the stock price from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (stock price)  No parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stock_widget_a696f274d7915cd579062e98d268b4be4}{print\+Stock\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Prints the stock information pulled from the A\+PI for use in testing  Returns the stock information like temperature and conditions that are from the A\+PI calls  none. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stock_widget_af1da71cd53153f27818aa6afb94cb50b}{stock\+A\+P\+I\+Call\+Results}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Calls the stocks\+A\+PI and stores the results in a string  Utilizes C\+U\+RL to pull weather data from the intrino A\+PI and store in in a string to be returned. Uses the user\textquotesingle{}s input stock symbol put in the U\+RL.  string stock\+Symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class containing the public functions and private variables in the Stock Widget objects  An overview of the structures behind the Stock\+Widget.\+cpp file  Takes multiple -\/ outlined in the Stock\+Widget.\+cpp documentation. 
+
+\begin{DoxyReturn}{Returns}
+Many (see Stock\+Widget.\+cpp for more information) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stock_widget_aa2748d2e00f0e4b91e1aea0faccba2f1}\label{class_stock_widget_aa2748d2e00f0e4b91e1aea0faccba2f1}} 
+\index{Stock\+Widget@{Stock\+Widget}!Stock\+Widget@{Stock\+Widget}}
+\index{Stock\+Widget@{Stock\+Widget}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{Stock\+Widget()}{StockWidget()}}
+{\footnotesize\ttfamily Stock\+Widget\+::\+Stock\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty constructor for Stock Widget  Creates an empty Stock Widget as the default widget configuration  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An Empty Stock Widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_widget_a439ffbe3e2ebbd7e0760ee10156448b5}\label{class_stock_widget_a439ffbe3e2ebbd7e0760ee10156448b5}} 
+\index{Stock\+Widget@{Stock\+Widget}!````~Stock\+Widget@{$\sim$\+Stock\+Widget}}
+\index{````~Stock\+Widget@{$\sim$\+Stock\+Widget}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{$\sim$\+Stock\+Widget()}{~StockWidget()}}
+{\footnotesize\ttfamily Stock\+Widget\+::$\sim$\+Stock\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty destructor for Stock Widget  Destroys Stock Widget in memory  Takes no parameters. 
+
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_widget_ad053fb0af2da4413c337771fa083bc07}\label{class_stock_widget_ad053fb0af2da4413c337771fa083bc07}} 
+\index{Stock\+Widget@{Stock\+Widget}!get\+Stock\+Price@{get\+Stock\+Price}}
+\index{get\+Stock\+Price@{get\+Stock\+Price}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{get\+Stock\+Price()}{getStockPrice()}}
+{\footnotesize\ttfamily string Stock\+Widget\+::get\+Stock\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the stock price from the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the stock price from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (stock price)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the stock price for use in the stock widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_widget_a69debafcc6d655a83e4e3af67a78e8c3}\label{class_stock_widget_a69debafcc6d655a83e4e3af67a78e8c3}} 
+\index{Stock\+Widget@{Stock\+Widget}!get\+Stock\+Symbol@{get\+Stock\+Symbol}}
+\index{get\+Stock\+Symbol@{get\+Stock\+Symbol}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{get\+Stock\+Symbol()}{getStockSymbol()}}
+{\footnotesize\ttfamily string Stock\+Widget\+::get\+Stock\+Symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the symbol called by the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  A getter function to return the stock symbol of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Stock Widget\textquotesingle{}s stock symbol 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_widget_ab29e0ec75f29ecc1b1a16423de40ac46}\label{class_stock_widget_ab29e0ec75f29ecc1b1a16423de40ac46}} 
+\index{Stock\+Widget@{Stock\+Widget}!get\+Stock\+Widget\+ID@{get\+Stock\+Widget\+ID}}
+\index{get\+Stock\+Widget\+ID@{get\+Stock\+Widget\+ID}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{get\+Stock\+Widget\+I\+D()}{getStockWidgetID()}}
+{\footnotesize\ttfamily int Stock\+Widget\+::get\+Stock\+Widget\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the ID of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  A getter function to return the ID of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Stock Widget\textquotesingle{}s ID 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_widget_ad2db18f7104a367ddc9fe56d019249cb}\label{class_stock_widget_ad2db18f7104a367ddc9fe56d019249cb}} 
+\index{Stock\+Widget@{Stock\+Widget}!get\+Stock\+Widget\+Name@{get\+Stock\+Widget\+Name}}
+\index{get\+Stock\+Widget\+Name@{get\+Stock\+Widget\+Name}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{get\+Stock\+Widget\+Name()}{getStockWidgetName()}}
+{\footnotesize\ttfamily string Stock\+Widget\+::get\+Stock\+Widget\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  A getter function to return the name of the \mbox{\hyperlink{class_stock_widget}{Stock\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Stock Widget\textquotesingle{}s name 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_widget_a696f274d7915cd579062e98d268b4be4}\label{class_stock_widget_a696f274d7915cd579062e98d268b4be4}} 
+\index{Stock\+Widget@{Stock\+Widget}!print\+Stock\+Price@{print\+Stock\+Price}}
+\index{print\+Stock\+Price@{print\+Stock\+Price}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{print\+Stock\+Price()}{printStockPrice()}}
+{\footnotesize\ttfamily void Stock\+Widget\+::print\+Stock\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the stock information pulled from the A\+PI for use in testing  Returns the stock information like temperature and conditions that are from the A\+PI calls  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Prints to the screen the results of getting the stock information using the other functions in the class. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_widget_af1da71cd53153f27818aa6afb94cb50b}\label{class_stock_widget_af1da71cd53153f27818aa6afb94cb50b}} 
+\index{Stock\+Widget@{Stock\+Widget}!stock\+A\+P\+I\+Call\+Results@{stock\+A\+P\+I\+Call\+Results}}
+\index{stock\+A\+P\+I\+Call\+Results@{stock\+A\+P\+I\+Call\+Results}!Stock\+Widget@{Stock\+Widget}}
+\subsubsection{\texorpdfstring{stock\+A\+P\+I\+Call\+Results()}{stockAPICallResults()}}
+{\footnotesize\ttfamily string Stock\+Widget\+::stock\+A\+P\+I\+Call\+Results (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Calls the stocks\+A\+PI and stores the results in a string  Utilizes C\+U\+RL to pull weather data from the intrino A\+PI and store in in a string to be returned. Uses the user\textquotesingle{}s input stock symbol put in the U\+RL.  string stock\+Symbol. 
+
+\begin{DoxyReturn}{Returns}
+A string with the block of text containing the stock\+A\+PI results for the stock symbols requested. Returns errors depending on the issues that could be faced. For example, an error is returned if the network is not connected, and also if the stock symbol information is incorrect. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Stock\+Widget.\+h\item 
+Stock\+Widget.\+cpp\end{DoxyCompactItemize}

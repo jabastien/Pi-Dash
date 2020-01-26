@@ -1,0 +1,139 @@
+~\newline
+\subsection*{Group 21 -\/ Stage 4 Submission}
+
+\subparagraph*{}
+
+Stage 4 was implemented using a front-\/end language known as ncurses.~\newline
+ The dashboard allows for user registration and to log in through a sample account as noted below.~\newline
+ Weather, News, Stocks pull from various A\+P\+Is using C\+U\+RL to display on the front end.~\newline
+ All UI is built using A\+S\+C\+II art and ncurses.~\newline
+ For the best UI experience, change the resolution of the PI to the max supported and run terminal full screen.~\newline
+ This will prevent scaling issues with ncurses.~\newline
+
+
+\subparagraph*{}
+
+~\newline
+\subsection*{To Install Home\+Brew (Mac\+OS)}
+
+\subparagraph*{}
+
+\subsubsection*{Note\+:}
+
+-\/-\/---~\newline
+ Home\+Brew will be needed to run the code on Mac\+OS.~\newline
+ ~\newline
+ 1) Open Terminal~\newline
+ 2) Enter the following command\+:~\newline
+ /usr/bin/ruby -\/e \char`\"{}\$(curl -\/fs\+S\+L https\+://raw.\+githubusercontent.\+com/\+Homebrew/install/master/install)\char`\"{}~\newline
+
+
+\subparagraph*{}
+
+~\newline
+\subsection*{To Install C\+U\+RL}
+
+\subparagraph*{}
+
+\subsubsection*{Mac\+OS\+:}
+
+-\/-\/-\/---~\newline
+ Installing c\+U\+RL~\newline
+ 1) Open Terminal~\newline
+ 2) Install Home\+Brew using the above steps before continuing.~\newline
+ 3) Once completed, run the final command\+:~\newline
+ \&\#09;brew install curl~\newline
+ 4) That\textquotesingle{}s it, curl is now installed to\+:~\newline
+ \&\#09;/usr/local/\+Cellar/curl/7.62.\+0/~\newline
+ 5) The C\+Make\+Lists.\+txt file will need to include\+:~\newline
+ \begin{DoxyVerb}    set(CURL_LIBRARY "-lcurl")
+    find_package(CURL REQUIRED)
+
+    TARGET_LINK_LIBRARIES(StockWidget ${CURL_LIBRARIES})
+    TARGET_LINK_LIBRARIES(NewsWidget ${CURL_LIBRARIES})
+    TARGET_LINK_LIBRARIES(WeatherWidget ${CURL_LIBRARIES})
+\end{DoxyVerb}
+
+
+\subsubsection*{Ubuntu / Debian (Pi)}
+
+-\/-\/-\/---~\newline
+ 1) Open Terminal~\newline
+ 2) Enter the following command\+:~\newline
+ \&\#09;sudo apt-\/get install curl~\newline
+ 3) If you still run into errors, try the following command as well\+:~\newline
+ \&\#09;sudo apt-\/get install libcurl4-\/openssl-\/dev~\newline
+
+
+\subparagraph*{}
+
+~\newline
+\subsection*{To Install N\+C\+U\+R\+S\+ES}
+
+\subparagraph*{}
+
+\subsubsection*{Mac\+OS\+:}
+
+-\/-\/-\/---~\newline
+ Installing N\+C\+U\+R\+S\+ES~\newline
+ 1) Open Terminal~\newline
+ 2) Install Home\+Brew using the above steps before continuing.~\newline
+ 3) Once completed, run the final command\+:~\newline
+ \&\#09;brew install ncurses~\newline
+ 4) That\textquotesingle{}s it, curl is now installed.~\newline
+ 5) The C\+Make\+Lists.\+txt file will need to include\+:~\newline
+ \begin{DoxyVerb}    find_package(CURSES REQUIRED)
+\end{DoxyVerb}
+
+
+\subsubsection*{Ubuntu / Debian (Pi)}
+
+-\/-\/-\/---~\newline
+ 1) Open Terminal~\newline
+ 2) Enter the following command\+:~\newline
+ \&\#09;sudo apt-\/get install libncurses5-\/dev libncursesw5-\/de~\newline
+
+
+\subparagraph*{}
+
+~\newline
+\subsection*{To Install cmake}
+
+\subparagraph*{}
+
+\subsubsection*{Mac OS\+:}
+
+-\/-\/-\/---~\newline
+ 1) Follow the directions above to install Home\+Brew~\newline
+ 2) brew install cmake~\newline
+ 3) cmake is now installed
+
+\subsubsection*{Ubuntu / Debian (Pi)}
+
+-\/-\/-\/---~\newline
+ 1) Open Terminal~\newline
+ 2) Enter the following commands\+:~\newline
+ \&\#09;sudo apt-\/get update~\newline
+ \&\#09;sudo apt-\/get upgrade~\newline
+ \&\#09;sudo apt-\/get install cmake~\newline
+
+
+\subparagraph*{}
+
+~\newline
+\subsection*{To Run The Application}
+
+\subparagraph*{}
+
+1) Open Terminal and set the window size to be full screen (this will prevent odd UI issues with ncurses) 2) Enter the following commands\+: cd \mbox{[}directory of project files\mbox{]} cmake . make 3) Run ./\+Main\+Interface to run the main program.~\newline
+ \&\#09;{\bfseries Note\+:} A sample login is saved as\+:~\newline
+ \&\#09;\&\#09;$<$u$>$Username\+:$<$/u$>$ admin~\newline
+ \&\#09;\&\#09;$<$u$>$password\+:$<$/u$>$ password. 4) Executables for widgets can also be run to test them on the back end.~\newline
+ \&\#09;./\+Stock\+Widget -\/ runs the stock widget program~\newline
+ \&\#09;./\+News\+Widget -\/ runs the news widget program~\newline
+ \&\#09;./\+Weather\+Widget -\/ runs the weather widget program~\newline
+ \&\#09;./\+Date\+Widget -\/ runs the date widget program~\newline
+ \&\#09;./\+Time\+Date\+Widget -\/ runs the time widget program~\newline
+ \&\#09;./\+User\+Preferences -\/ runs the user preference widget program~\newline
+ \&\#09;./\+Test\+User\+Sign\+In -\/ runs the user sign in program~\newline
+ 

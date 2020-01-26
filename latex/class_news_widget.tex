@@ -1,0 +1,235 @@
+\hypertarget{class_news_widget}{}\section{News\+Widget Class Reference}
+\label{class_news_widget}\index{News\+Widget@{News\+Widget}}
+
+
+A class containing the public functions and private variables in the News Widget objects  An overview of the structures behind the News\+Widget.\+cpp file  Takes multiple -\/ outlined in the News\+Widget.\+cpp documentation.  
+
+
+
+
+{\ttfamily \#include $<$News\+Widget.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_news_widget_a9437347c57951bcd319ee62012b154c7}{News\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty constructor for N\+Ews Widget  Creates an empty N\+Ews Widget as the default widget configuration  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_news_widget_a554d8bd0ec17ad06e7100095ac8ade6c}\label{class_news_widget_a554d8bd0ec17ad06e7100095ac8ade6c}} 
+{\bfseries News\+Widget} (std\+::string, int, int)
+\item 
+\mbox{\hyperlink{class_news_widget_a24c2680f9e53728e3e0674952e8a21bc}{$\sim$\+News\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty destructor for News Widget  Destroys News Widget in memory  Takes no parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_news_widget_a0af651adfe7c7edb7f8063589162de8f}{get\+News\+Widget\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  A getter function to return the name of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_news_widget_a446535e974cd300e9952a083290cfc30}{get\+News\+Widget\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Returns the ID of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  A getter function to return the ID of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_news_widget_adb74146c7a393d38c6a883bed0fb1012}{get\+Number\+Of\+Headlines}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number\+Of\+Headlines requested by the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  A getter function to return the stock symbol of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_news_widget_a89b254028a1832afa896827e0e0cedf3}{get\+News\+Headlines}} ()
+\begin{DoxyCompactList}\small\item\em Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the headlines from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (news headline)  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_news_widget_a488154d90869f16341f533e7a2c96dfd}{get\+News\+Headlines}} (int)
+\begin{DoxyCompactList}\small\item\em Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the headlines from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (news headlines)  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_news_widget_a8528a1c4a46e6d2cf124fcb1720f5860}{get\+News\+Urls}} ()
+\begin{DoxyCompactList}\small\item\em Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the url from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (url)  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_news_widget_a746993897e9d477e5b3ff225faca2ae1}{get\+News\+Urls}} (int)
+\begin{DoxyCompactList}\small\item\em Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the multiple urls from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (news urls)  No parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_news_widget_a3a3c9dc6ec6d9e68bf9150ec109f3619}{print\+News\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Prints the news information pulled from the A\+PI for use in testing  Returns the news information like headlines and urls that are from the A\+PI calls  none. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_news_widget_a514475c2b2c2f716aed06d0060efee7e}{news\+A\+P\+I\+Call\+Results}} ()
+\begin{DoxyCompactList}\small\item\em Calls the news\+A\+PI and stores the results in a string  Utilizes C\+U\+RL to pull weather data from the newsapi A\+PI and store in in a string to be returned. Uses the user\textquotesingle{}s number of headlines.  none. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class containing the public functions and private variables in the News Widget objects  An overview of the structures behind the News\+Widget.\+cpp file  Takes multiple -\/ outlined in the News\+Widget.\+cpp documentation. 
+
+\begin{DoxyReturn}{Returns}
+Many (see News\+Widget.\+cpp for more information) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_news_widget_a9437347c57951bcd319ee62012b154c7}\label{class_news_widget_a9437347c57951bcd319ee62012b154c7}} 
+\index{News\+Widget@{News\+Widget}!News\+Widget@{News\+Widget}}
+\index{News\+Widget@{News\+Widget}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{News\+Widget()}{NewsWidget()}}
+{\footnotesize\ttfamily News\+Widget\+::\+News\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty constructor for N\+Ews Widget  Creates an empty N\+Ews Widget as the default widget configuration  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An Empty News Widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a24c2680f9e53728e3e0674952e8a21bc}\label{class_news_widget_a24c2680f9e53728e3e0674952e8a21bc}} 
+\index{News\+Widget@{News\+Widget}!````~News\+Widget@{$\sim$\+News\+Widget}}
+\index{````~News\+Widget@{$\sim$\+News\+Widget}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{$\sim$\+News\+Widget()}{~NewsWidget()}}
+{\footnotesize\ttfamily News\+Widget\+::$\sim$\+News\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty destructor for News Widget  Destroys News Widget in memory  Takes no parameters. 
+
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_news_widget_a89b254028a1832afa896827e0e0cedf3}\label{class_news_widget_a89b254028a1832afa896827e0e0cedf3}} 
+\index{News\+Widget@{News\+Widget}!get\+News\+Headlines@{get\+News\+Headlines}}
+\index{get\+News\+Headlines@{get\+News\+Headlines}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+News\+Headlines()}{getNewsHeadlines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string News\+Widget\+::get\+News\+Headlines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the headlines from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (news headline)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the news story headline for use in the news widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a488154d90869f16341f533e7a2c96dfd}\label{class_news_widget_a488154d90869f16341f533e7a2c96dfd}} 
+\index{News\+Widget@{News\+Widget}!get\+News\+Headlines@{get\+News\+Headlines}}
+\index{get\+News\+Headlines@{get\+News\+Headlines}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+News\+Headlines()}{getNewsHeadlines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string News\+Widget\+::get\+News\+Headlines (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the headlines from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (news headlines)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the news headlines for use in the news widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a8528a1c4a46e6d2cf124fcb1720f5860}\label{class_news_widget_a8528a1c4a46e6d2cf124fcb1720f5860}} 
+\index{News\+Widget@{News\+Widget}!get\+News\+Urls@{get\+News\+Urls}}
+\index{get\+News\+Urls@{get\+News\+Urls}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+News\+Urls()}{getNewsUrls()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string News\+Widget\+::get\+News\+Urls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the url from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (url)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the news story url for use in the news widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a746993897e9d477e5b3ff225faca2ae1}\label{class_news_widget_a746993897e9d477e5b3ff225faca2ae1}} 
+\index{News\+Widget@{News\+Widget}!get\+News\+Urls@{get\+News\+Urls}}
+\index{get\+News\+Urls@{get\+News\+Urls}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+News\+Urls()}{getNewsUrls()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string News\+Widget\+::get\+News\+Urls (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Returns the headlines from the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the multiple urls from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (news urls)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the news urls for use in the news widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a446535e974cd300e9952a083290cfc30}\label{class_news_widget_a446535e974cd300e9952a083290cfc30}} 
+\index{News\+Widget@{News\+Widget}!get\+News\+Widget\+ID@{get\+News\+Widget\+ID}}
+\index{get\+News\+Widget\+ID@{get\+News\+Widget\+ID}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+News\+Widget\+I\+D()}{getNewsWidgetID()}}
+{\footnotesize\ttfamily int News\+Widget\+::get\+News\+Widget\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the ID of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  A getter function to return the ID of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the News Widget\textquotesingle{}s ID 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a0af651adfe7c7edb7f8063589162de8f}\label{class_news_widget_a0af651adfe7c7edb7f8063589162de8f}} 
+\index{News\+Widget@{News\+Widget}!get\+News\+Widget\+Name@{get\+News\+Widget\+Name}}
+\index{get\+News\+Widget\+Name@{get\+News\+Widget\+Name}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+News\+Widget\+Name()}{getNewsWidgetName()}}
+{\footnotesize\ttfamily string News\+Widget\+::get\+News\+Widget\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  A getter function to return the name of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the \mbox{\hyperlink{class_news_widget}{News\+Widget}}\textquotesingle{}s name 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_adb74146c7a393d38c6a883bed0fb1012}\label{class_news_widget_adb74146c7a393d38c6a883bed0fb1012}} 
+\index{News\+Widget@{News\+Widget}!get\+Number\+Of\+Headlines@{get\+Number\+Of\+Headlines}}
+\index{get\+Number\+Of\+Headlines@{get\+Number\+Of\+Headlines}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Headlines()}{getNumberOfHeadlines()}}
+{\footnotesize\ttfamily int News\+Widget\+::get\+Number\+Of\+Headlines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number\+Of\+Headlines requested by the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  A getter function to return the stock symbol of the \mbox{\hyperlink{class_news_widget}{News\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A int containing the News Widget\textquotesingle{}s number of headlines 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a514475c2b2c2f716aed06d0060efee7e}\label{class_news_widget_a514475c2b2c2f716aed06d0060efee7e}} 
+\index{News\+Widget@{News\+Widget}!news\+A\+P\+I\+Call\+Results@{news\+A\+P\+I\+Call\+Results}}
+\index{news\+A\+P\+I\+Call\+Results@{news\+A\+P\+I\+Call\+Results}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{news\+A\+P\+I\+Call\+Results()}{newsAPICallResults()}}
+{\footnotesize\ttfamily string News\+Widget\+::news\+A\+P\+I\+Call\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the news\+A\+PI and stores the results in a string  Utilizes C\+U\+RL to pull weather data from the newsapi A\+PI and store in in a string to be returned. Uses the user\textquotesingle{}s number of headlines.  none. 
+
+\begin{DoxyReturn}{Returns}
+A string with the block of text containing the news\+A\+PI results for the news headlines and U\+R\+Ls requested. Returns errors depending on the issues that could be faced. For example, an error is returned if the network is not connected, and also if the stock symbol information is incorrect. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_news_widget_a3a3c9dc6ec6d9e68bf9150ec109f3619}\label{class_news_widget_a3a3c9dc6ec6d9e68bf9150ec109f3619}} 
+\index{News\+Widget@{News\+Widget}!print\+News\+Information@{print\+News\+Information}}
+\index{print\+News\+Information@{print\+News\+Information}!News\+Widget@{News\+Widget}}
+\subsubsection{\texorpdfstring{print\+News\+Information()}{printNewsInformation()}}
+{\footnotesize\ttfamily void News\+Widget\+::print\+News\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the news information pulled from the A\+PI for use in testing  Returns the news information like headlines and urls that are from the A\+PI calls  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Prints to the screen the results of getting the news information using the other functions in the class. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+News\+Widget.\+h\item 
+News\+Widget.\+cpp\end{DoxyCompactItemize}

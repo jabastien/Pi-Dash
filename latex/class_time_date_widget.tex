@@ -1,0 +1,307 @@
+\hypertarget{class_time_date_widget}{}\section{Time\+Date\+Widget Class Reference}
+\label{class_time_date_widget}\index{Time\+Date\+Widget@{Time\+Date\+Widget}}
+
+
+A class containing the public functions and private variables in the Time\+Date Widget objects  An overview of the structures behind the Time\+Date\+Widget.\+cpp file  Takes multiple -\/ outlined in the Time\+Date\+Widget.\+cpp documentation.  
+
+
+
+
+{\ttfamily \#include $<$Time\+Date\+Widget.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_time_date_widget_a661a209376b099776bdb2cdf3b29b7be}{Time\+Date\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty constructor for \mbox{\hyperlink{class_time_date_widget}{Time\+Date\+Widget}}  Creates an empty \mbox{\hyperlink{class_time_date_widget}{Time\+Date\+Widget}} Widget as the default widget configuration  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_date_widget_aa52cfdaaa44a82ef169b2f368130e1de}{$\sim$\+Time\+Date\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor for \mbox{\hyperlink{class_time_date_widget}{Time\+Date\+Widget}}  Removes the widget from within memory  Takes no parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_aae23752646a1d3d0185118a50c2f6029}{sleep}} (int)
+\begin{DoxyCompactList}\small\item\em Sends a value back to the widget using system sleep  Allows the user to set a thread sleep time which is used for updating the time on the clock  Takes milliseconds as a parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_a7435370eaf6bfbbef35708a0444505a1}{ctmcpy}} (char $\ast$, struct tm $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_a48922ee8b0b5ffdddbf1f88183ca681a}{moncpy}} (char $\ast$, struct tm $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_a246faf35eac50b09e6abcce4e7be05bb}{wkdcpy}} (char $\ast$, struct tm $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_a437ad9c3d801f50692798ffffad08297}{mndcpy}} (char $\ast$, struct tm $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_aa7cfe9f3a2a54c339e1504a31f8eecc6}{yrcpy}} (char $\ast$, struct tm $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_afce189c830553f6da526d5090849c6f4}{ydcpy}} (char $\ast$, struct tm $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_time_date_widget_a52e79b18c5d46d77a0bc1a198ebcec40}{kbhit}} ()
+\begin{DoxyCompactList}\small\item\em Allows for a kill switch in the while loop to tell the system to exit based on the user\textquotesingle{}s input  Passes parameters to copy the current time information to the system using a format string  none. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_date_widget_abe51a4c778e6351c171067a4706d01d1}{set\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Sets the time based on the user\textquotesingle{}s preferences  Allows the user to set their own time based on the timezone  uses the cin to get input from the user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_time_date_widget_a63a3ea239ff728c0dbf3c0ca2caa5be5}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Returns the time  Returns the date through the use of a getter  none. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_time_date_widget_ae492dd2f58b16b38decd4f4602b08dea}{time\+To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the time as a string  Returns the time as a string using a generated to\+String() function  none. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_time_date_widget_ac35ae151576ef382ca6ae7d8011357cf}{get\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Returns the date  Returns the date through the use of a getter  none. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_time_date_widget_ad904a60e864d47cde0ab456d47b2cd15}{date\+To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the date as a string  Returns the date as a string using a generated to\+String() function  none. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class containing the public functions and private variables in the Time\+Date Widget objects  An overview of the structures behind the Time\+Date\+Widget.\+cpp file  Takes multiple -\/ outlined in the Time\+Date\+Widget.\+cpp documentation. 
+
+\begin{DoxyReturn}{Returns}
+Many (see Time\+Date\+Widget.\+cpp for more information) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_time_date_widget_a661a209376b099776bdb2cdf3b29b7be}\label{class_time_date_widget_a661a209376b099776bdb2cdf3b29b7be}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{Time\+Date\+Widget()}{TimeDateWidget()}}
+{\footnotesize\ttfamily Time\+Date\+Widget\+::\+Time\+Date\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty constructor for \mbox{\hyperlink{class_time_date_widget}{Time\+Date\+Widget}}  Creates an empty \mbox{\hyperlink{class_time_date_widget}{Time\+Date\+Widget}} Widget as the default widget configuration  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An Empty Time\+Date Widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_aa52cfdaaa44a82ef169b2f368130e1de}\label{class_time_date_widget_aa52cfdaaa44a82ef169b2f368130e1de}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!````~Time\+Date\+Widget@{$\sim$\+Time\+Date\+Widget}}
+\index{````~Time\+Date\+Widget@{$\sim$\+Time\+Date\+Widget}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{$\sim$\+Time\+Date\+Widget()}{~TimeDateWidget()}}
+{\footnotesize\ttfamily Time\+Date\+Widget\+::$\sim$\+Time\+Date\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor for \mbox{\hyperlink{class_time_date_widget}{Time\+Date\+Widget}}  Removes the widget from within memory  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_time_date_widget_a7435370eaf6bfbbef35708a0444505a1}\label{class_time_date_widget_a7435370eaf6bfbbef35708a0444505a1}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!ctmcpy@{ctmcpy}}
+\index{ctmcpy@{ctmcpy}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{ctmcpy()}{ctmcpy()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::ctmcpy (\begin{DoxyParamCaption}\item[{char $\ast$}]{tar,  }\item[{struct tm $\ast$}]{td,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_ad904a60e864d47cde0ab456d47b2cd15}\label{class_time_date_widget_ad904a60e864d47cde0ab456d47b2cd15}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!date\+To\+String@{date\+To\+String}}
+\index{date\+To\+String@{date\+To\+String}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{date\+To\+String()}{dateToString()}}
+{\footnotesize\ttfamily string Time\+Date\+Widget\+::date\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the date as a string  Returns the date as a string using a generated to\+String() function  none. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the current date 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_ac35ae151576ef382ca6ae7d8011357cf}\label{class_time_date_widget_ac35ae151576ef382ca6ae7d8011357cf}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily string Time\+Date\+Widget\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the date  Returns the date through the use of a getter  none. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the current date 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_a63a3ea239ff728c0dbf3c0ca2caa5be5}\label{class_time_date_widget_a63a3ea239ff728c0dbf3c0ca2caa5be5}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}}
+{\footnotesize\ttfamily string Time\+Date\+Widget\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the time  Returns the date through the use of a getter  none. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the current time 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_a52e79b18c5d46d77a0bc1a198ebcec40}\label{class_time_date_widget_a52e79b18c5d46d77a0bc1a198ebcec40}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!kbhit@{kbhit}}
+\index{kbhit@{kbhit}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{kbhit()}{kbhit()}}
+{\footnotesize\ttfamily int Time\+Date\+Widget\+::kbhit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows for a kill switch in the while loop to tell the system to exit based on the user\textquotesingle{}s input  Passes parameters to copy the current time information to the system using a format string  none. 
+
+\begin{DoxyReturn}{Returns}
+byteswaiting which sends a killswitch if certain items are pressed on the keyboard (shity + left, etc) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_a437ad9c3d801f50692798ffffad08297}\label{class_time_date_widget_a437ad9c3d801f50692798ffffad08297}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!mndcpy@{mndcpy}}
+\index{mndcpy@{mndcpy}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{mndcpy()}{mndcpy()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::mndcpy (\begin{DoxyParamCaption}\item[{char $\ast$}]{tar,  }\item[{struct tm $\ast$}]{td,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_a48922ee8b0b5ffdddbf1f88183ca681a}\label{class_time_date_widget_a48922ee8b0b5ffdddbf1f88183ca681a}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!moncpy@{moncpy}}
+\index{moncpy@{moncpy}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{moncpy()}{moncpy()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::moncpy (\begin{DoxyParamCaption}\item[{char $\ast$}]{tar,  }\item[{struct tm $\ast$}]{td,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_abe51a4c778e6351c171067a4706d01d1}\label{class_time_date_widget_abe51a4c778e6351c171067a4706d01d1}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::set\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the time based on the user\textquotesingle{}s preferences  Allows the user to set their own time based on the timezone  uses the cin to get input from the user. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_aae23752646a1d3d0185118a50c2f6029}\label{class_time_date_widget_aae23752646a1d3d0185118a50c2f6029}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!sleep@{sleep}}
+\index{sleep@{sleep}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::sleep (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})}
+
+
+
+Sends a value back to the widget using system sleep  Allows the user to set a thread sleep time which is used for updating the time on the clock  Takes milliseconds as a parameter. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_ae492dd2f58b16b38decd4f4602b08dea}\label{class_time_date_widget_ae492dd2f58b16b38decd4f4602b08dea}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!time\+To\+String@{time\+To\+String}}
+\index{time\+To\+String@{time\+To\+String}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{time\+To\+String()}{timeToString()}}
+{\footnotesize\ttfamily string Time\+Date\+Widget\+::time\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the time as a string  Returns the time as a string using a generated to\+String() function  none. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the current time 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_a246faf35eac50b09e6abcce4e7be05bb}\label{class_time_date_widget_a246faf35eac50b09e6abcce4e7be05bb}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!wkdcpy@{wkdcpy}}
+\index{wkdcpy@{wkdcpy}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{wkdcpy()}{wkdcpy()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::wkdcpy (\begin{DoxyParamCaption}\item[{char $\ast$}]{tar,  }\item[{struct tm $\ast$}]{td,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_afce189c830553f6da526d5090849c6f4}\label{class_time_date_widget_afce189c830553f6da526d5090849c6f4}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!ydcpy@{ydcpy}}
+\index{ydcpy@{ydcpy}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{ydcpy()}{ydcpy()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::ydcpy (\begin{DoxyParamCaption}\item[{char $\ast$}]{tar,  }\item[{struct tm $\ast$}]{td,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_time_date_widget_aa7cfe9f3a2a54c339e1504a31f8eecc6}\label{class_time_date_widget_aa7cfe9f3a2a54c339e1504a31f8eecc6}} 
+\index{Time\+Date\+Widget@{Time\+Date\+Widget}!yrcpy@{yrcpy}}
+\index{yrcpy@{yrcpy}!Time\+Date\+Widget@{Time\+Date\+Widget}}
+\subsubsection{\texorpdfstring{yrcpy()}{yrcpy()}}
+{\footnotesize\ttfamily void Time\+Date\+Widget\+::yrcpy (\begin{DoxyParamCaption}\item[{char $\ast$}]{tar,  }\item[{struct tm $\ast$}]{td,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Gets the current time information from the system time and converts it to print  Passes parameters to copy the current time information to the system using a format string  $\ast$tar -\/ pointer where the information is copied $\vert$ tm $\ast$td a set size of max characters to be copied $\vert$ sz abbreviated options according to the current locale. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Qi Liu 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Time\+Date\+Widget.\+h\item 
+Time\+Date\+Widget.\+cpp\end{DoxyCompactItemize}

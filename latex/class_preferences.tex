@@ -1,0 +1,374 @@
+\hypertarget{class_preferences}{}\section{Preferences Class Reference}
+\label{class_preferences}\index{Preferences@{Preferences}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_preferences_a9ca3b7029509bc36da1a57ed296c2fa8}{Preferences}} ()
+\begin{DoxyCompactList}\small\item\em Default empty constructor for User \mbox{\hyperlink{class_preferences}{Preferences}}  Creates an empty \mbox{\hyperlink{class_preferences}{Preferences}} instance as the default configuration  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_preferences_a419ad1e25778f1705cd8c15cd18fcdab}{Preferences}} (string name, string country, string city)
+\begin{DoxyCompactList}\small\item\em Constructor for User \mbox{\hyperlink{class_preferences}{Preferences}} with paramaters passed  Sets the user preferences based on a constructed object with the name, country, and city as input  string name, string country, string city. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_preferences_af8b8a891846a7c555e3c7861bc2c1841}{Preferences}} (string name, string country, string city, int finance, int weather, int news, int date)
+\begin{DoxyCompactList}\small\item\em Constructor for User \mbox{\hyperlink{class_preferences}{Preferences}} with extended paramaters passed  Sets the user preferences based on a constructed object with more preferences the name, country, and city, finance, weather, news, date widget status as input  string name, string country, string city, int finance, int weather, int news, int date. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_preferences_a20020f4fceeefb048a5eeddec6c28376}{$\sim$\+Preferences}} ()
+\begin{DoxyCompactList}\small\item\em Default empty destructor for \mbox{\hyperlink{class_preferences}{Preferences}}  Destroys \mbox{\hyperlink{class_preferences}{Preferences}} Object in memory  Takes no parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a350314fc1089f808411030293063225a}{change\+Name}} (string new\+Name)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting a new preference name attribute  A setter function to change the name within the preferences object  string new\+Name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a2224b83d157c6f0010fcbb7b2e52ff5f}{change\+Country}} (string new\+Country)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting a new preference country attribute  A setter function to change the country within the preferences object  string new\+Country. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_aa89a1bfc76845147a2c0db63ba73bbc7}{change\+City}} (string new\+City)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting a new preference city attribute  A setter function to change the city within the preferences object  string new\+City. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a061f9192e0abf787a7d18d40dd7712c9}{turn\+Finance}} (int status)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting the finance widget to on or off  A setter function to change the finance widget status within the preferences object  int status. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a59db5bdccd2dbae9aa3fa5e71580d69f}{turn\+Weather}} (int status)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting the weather widget to on or off  A setter function to change the weather widget status within the preferences object  int status. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_afd7d3c7e5afa2d73087137d63ec0eccc}{turn\+News}} (int status)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting the news widget to on or off  A setter function to change the news widget status within the preferences object  int status. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a6c2ed2905019c8231a1b9627e25c15b0}{turn\+Date}} (int status)
+\begin{DoxyCompactList}\small\item\em Returns a status of -\/1 or 0 when setting the time and date widget to on or off  A setter function to change the time and date widget status within the preferences object  int status. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_preferences_a2496f5889a605786bfd0971a421ce70b}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the name of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_preferences_ac7df042c5760319cd884048c7f85c0e3}{get\+Country}} ()
+\begin{DoxyCompactList}\small\item\em Returns the country of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the country of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_preferences_a2a14e274fd369d3d36793170f62458cb}{get\+City}} ()
+\begin{DoxyCompactList}\small\item\em Returns the city of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the city of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a9c1c270a1e37321e6eb9b5eb90a91aba}{get\+Finance\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the finance widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the finance widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a94381281f2cbf83035484eb1704e6b83}{get\+Weather\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the weather widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the weather widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_a6c9f2c89fa3de8956120d3a4eddb8e20}{get\+News\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the news widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the news widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_preferences_afbdb72ac6c36492784e17b4d7e217ecc}{get\+Date\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the time and date widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the time and datewidget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_preferences_a383d16a7105233f96b089403ddcfbd1c}{get\+Preferences}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of all set preferences from the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the complete set of all preferences in a combined string of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_preferences_a69602ab02790104c3c3f49086c4f3463}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns string representation of all set preferences from the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A to\+String method that allows for the formatting of the preference items from the preference objects seperated by a pipe \textquotesingle{}$\vert$\textquotesingle{}  No parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_preferences_a9ca3b7029509bc36da1a57ed296c2fa8}\label{class_preferences_a9ca3b7029509bc36da1a57ed296c2fa8}} 
+\index{Preferences@{Preferences}!Preferences@{Preferences}}
+\index{Preferences@{Preferences}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{Preferences()}{Preferences()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Preferences\+::\+Preferences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty constructor for User \mbox{\hyperlink{class_preferences}{Preferences}}  Creates an empty \mbox{\hyperlink{class_preferences}{Preferences}} instance as the default configuration  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An Empty \mbox{\hyperlink{class_preferences}{Preferences}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a419ad1e25778f1705cd8c15cd18fcdab}\label{class_preferences_a419ad1e25778f1705cd8c15cd18fcdab}} 
+\index{Preferences@{Preferences}!Preferences@{Preferences}}
+\index{Preferences@{Preferences}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{Preferences()}{Preferences()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Preferences\+::\+Preferences (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{country,  }\item[{string}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructor for User \mbox{\hyperlink{class_preferences}{Preferences}} with paramaters passed  Sets the user preferences based on a constructed object with the name, country, and city as input  string name, string country, string city. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_preferences}{Preferences}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_af8b8a891846a7c555e3c7861bc2c1841}\label{class_preferences_af8b8a891846a7c555e3c7861bc2c1841}} 
+\index{Preferences@{Preferences}!Preferences@{Preferences}}
+\index{Preferences@{Preferences}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{Preferences()}{Preferences()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Preferences\+::\+Preferences (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{country,  }\item[{string}]{city,  }\item[{int}]{finance,  }\item[{int}]{weather,  }\item[{int}]{news,  }\item[{int}]{date }\end{DoxyParamCaption})}
+
+
+
+Constructor for User \mbox{\hyperlink{class_preferences}{Preferences}} with extended paramaters passed  Sets the user preferences based on a constructed object with more preferences the name, country, and city, finance, weather, news, date widget status as input  string name, string country, string city, int finance, int weather, int news, int date. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_preferences}{Preferences}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a20020f4fceeefb048a5eeddec6c28376}\label{class_preferences_a20020f4fceeefb048a5eeddec6c28376}} 
+\index{Preferences@{Preferences}!````~Preferences@{$\sim$\+Preferences}}
+\index{````~Preferences@{$\sim$\+Preferences}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{$\sim$\+Preferences()}{~Preferences()}}
+{\footnotesize\ttfamily Preferences\+::$\sim$\+Preferences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty destructor for \mbox{\hyperlink{class_preferences}{Preferences}}  Destroys \mbox{\hyperlink{class_preferences}{Preferences}} Object in memory  Takes no parameters. 
+
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_preferences_aa89a1bfc76845147a2c0db63ba73bbc7}\label{class_preferences_aa89a1bfc76845147a2c0db63ba73bbc7}} 
+\index{Preferences@{Preferences}!change\+City@{change\+City}}
+\index{change\+City@{change\+City}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{change\+City()}{changeCity()}}
+{\footnotesize\ttfamily int Preferences\+::change\+City (\begin{DoxyParamCaption}\item[{string}]{new\+City }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting a new preference city attribute  A setter function to change the city within the preferences object  string new\+City. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a2224b83d157c6f0010fcbb7b2e52ff5f}\label{class_preferences_a2224b83d157c6f0010fcbb7b2e52ff5f}} 
+\index{Preferences@{Preferences}!change\+Country@{change\+Country}}
+\index{change\+Country@{change\+Country}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{change\+Country()}{changeCountry()}}
+{\footnotesize\ttfamily int Preferences\+::change\+Country (\begin{DoxyParamCaption}\item[{string}]{new\+Country }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting a new preference country attribute  A setter function to change the country within the preferences object  string new\+Country. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a350314fc1089f808411030293063225a}\label{class_preferences_a350314fc1089f808411030293063225a}} 
+\index{Preferences@{Preferences}!change\+Name@{change\+Name}}
+\index{change\+Name@{change\+Name}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{change\+Name()}{changeName()}}
+{\footnotesize\ttfamily int Preferences\+::change\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+Name }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting a new preference name attribute  A setter function to change the name within the preferences object  string new\+Name. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a2a14e274fd369d3d36793170f62458cb}\label{class_preferences_a2a14e274fd369d3d36793170f62458cb}} 
+\index{Preferences@{Preferences}!get\+City@{get\+City}}
+\index{get\+City@{get\+City}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+City()}{getCity()}}
+{\footnotesize\ttfamily string Preferences\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the city of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the city of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the \mbox{\hyperlink{class_preferences}{Preferences}} Object city attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_ac7df042c5760319cd884048c7f85c0e3}\label{class_preferences_ac7df042c5760319cd884048c7f85c0e3}} 
+\index{Preferences@{Preferences}!get\+Country@{get\+Country}}
+\index{get\+Country@{get\+Country}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+Country()}{getCountry()}}
+{\footnotesize\ttfamily string Preferences\+::get\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the country of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the country of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the \mbox{\hyperlink{class_preferences}{Preferences}} Object country attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_afbdb72ac6c36492784e17b4d7e217ecc}\label{class_preferences_afbdb72ac6c36492784e17b4d7e217ecc}} 
+\index{Preferences@{Preferences}!get\+Date\+Status@{get\+Date\+Status}}
+\index{get\+Date\+Status@{get\+Date\+Status}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+Date\+Status()}{getDateStatus()}}
+{\footnotesize\ttfamily int Preferences\+::get\+Date\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the time and date widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the time and datewidget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+An integer that returns the status of the time and date widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a9c1c270a1e37321e6eb9b5eb90a91aba}\label{class_preferences_a9c1c270a1e37321e6eb9b5eb90a91aba}} 
+\index{Preferences@{Preferences}!get\+Finance\+Status@{get\+Finance\+Status}}
+\index{get\+Finance\+Status@{get\+Finance\+Status}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+Finance\+Status()}{getFinanceStatus()}}
+{\footnotesize\ttfamily int Preferences\+::get\+Finance\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the finance widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the finance widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+An integer that returns the status of the finance widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a2496f5889a605786bfd0971a421ce70b}\label{class_preferences_a2496f5889a605786bfd0971a421ce70b}} 
+\index{Preferences@{Preferences}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Preferences\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the name of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the \mbox{\hyperlink{class_preferences}{Preferences}} Object Name attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a6c9f2c89fa3de8956120d3a4eddb8e20}\label{class_preferences_a6c9f2c89fa3de8956120d3a4eddb8e20}} 
+\index{Preferences@{Preferences}!get\+News\+Status@{get\+News\+Status}}
+\index{get\+News\+Status@{get\+News\+Status}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+News\+Status()}{getNewsStatus()}}
+{\footnotesize\ttfamily int Preferences\+::get\+News\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the news widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the news widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+An integer that returns the status of the news widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a383d16a7105233f96b089403ddcfbd1c}\label{class_preferences_a383d16a7105233f96b089403ddcfbd1c}} 
+\index{Preferences@{Preferences}!get\+Preferences@{get\+Preferences}}
+\index{get\+Preferences@{get\+Preferences}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+Preferences()}{getPreferences()}}
+{\footnotesize\ttfamily string Preferences\+::get\+Preferences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of all set preferences from the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the complete set of all preferences in a combined string of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that stores the concatenation of all preference settings 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a94381281f2cbf83035484eb1704e6b83}\label{class_preferences_a94381281f2cbf83035484eb1704e6b83}} 
+\index{Preferences@{Preferences}!get\+Weather\+Status@{get\+Weather\+Status}}
+\index{get\+Weather\+Status@{get\+Weather\+Status}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{get\+Weather\+Status()}{getWeatherStatus()}}
+{\footnotesize\ttfamily int Preferences\+::get\+Weather\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the weather widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A getter function to return the weather widget status of the \mbox{\hyperlink{class_preferences}{Preferences}} Object  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+An integer that returns the status of the weather widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a69602ab02790104c3c3f49086c4f3463}\label{class_preferences_a69602ab02790104c3c3f49086c4f3463}} 
+\index{Preferences@{Preferences}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily string Preferences\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns string representation of all set preferences from the \mbox{\hyperlink{class_preferences}{Preferences}} Object  A to\+String method that allows for the formatting of the preference items from the preference objects seperated by a pipe \textquotesingle{}$\vert$\textquotesingle{}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string that is the print friendly version of the getter for preferences. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a6c2ed2905019c8231a1b9627e25c15b0}\label{class_preferences_a6c2ed2905019c8231a1b9627e25c15b0}} 
+\index{Preferences@{Preferences}!turn\+Date@{turn\+Date}}
+\index{turn\+Date@{turn\+Date}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{turn\+Date()}{turnDate()}}
+{\footnotesize\ttfamily int Preferences\+::turn\+Date (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting the time and date widget to on or off  A setter function to change the time and date widget status within the preferences object  int status. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a061f9192e0abf787a7d18d40dd7712c9}\label{class_preferences_a061f9192e0abf787a7d18d40dd7712c9}} 
+\index{Preferences@{Preferences}!turn\+Finance@{turn\+Finance}}
+\index{turn\+Finance@{turn\+Finance}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{turn\+Finance()}{turnFinance()}}
+{\footnotesize\ttfamily int Preferences\+::turn\+Finance (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting the finance widget to on or off  A setter function to change the finance widget status within the preferences object  int status. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_afd7d3c7e5afa2d73087137d63ec0eccc}\label{class_preferences_afd7d3c7e5afa2d73087137d63ec0eccc}} 
+\index{Preferences@{Preferences}!turn\+News@{turn\+News}}
+\index{turn\+News@{turn\+News}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{turn\+News()}{turnNews()}}
+{\footnotesize\ttfamily int Preferences\+::turn\+News (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting the news widget to on or off  A setter function to change the news widget status within the preferences object  int status. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_preferences_a59db5bdccd2dbae9aa3fa5e71580d69f}\label{class_preferences_a59db5bdccd2dbae9aa3fa5e71580d69f}} 
+\index{Preferences@{Preferences}!turn\+Weather@{turn\+Weather}}
+\index{turn\+Weather@{turn\+Weather}!Preferences@{Preferences}}
+\subsubsection{\texorpdfstring{turn\+Weather()}{turnWeather()}}
+{\footnotesize\ttfamily int Preferences\+::turn\+Weather (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Returns a status of -\/1 or 0 when setting the weather widget to on or off  A setter function to change the weather widget status within the preferences object  int status. 
+
+\begin{DoxyReturn}{Returns}
+An int, 0 for successful change made -\/1 for an error displayed 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Zhaohe Zhang 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Preferences.\+h\item 
+Preferences.\+cpp\end{DoxyCompactItemize}

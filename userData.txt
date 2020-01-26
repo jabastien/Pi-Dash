@@ -1,0 +1,2 @@
+testuser password Test London CA America/Toronto 1 1 1 1 1
+testuser2 password Test Cupertino US America/Pacific 0 0 1 1 1

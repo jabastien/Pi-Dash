@@ -1,0 +1,310 @@
+\hypertarget{class_weather_widget}{}\section{Weather\+Widget Class Reference}
+\label{class_weather_widget}\index{Weather\+Widget@{Weather\+Widget}}
+
+
+A class containing the public functions and private variables in the Weather Widget objects  An overview of the structures behind the Weather\+Widget.\+cpp file  Takes multiple -\/ outlined in the Weather\+Widget.\+cpp documentation.  
+
+
+
+
+{\ttfamily \#include $<$Weather\+Widget.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weather_widget_a671797f620c32b858c7746e4f8dd3a82}{Weather\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty constructor for Weather Widget  Creates an empty Weather Widget as the default widget configuration  Takes no parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weather_widget_abce378d53f41ebe5739a85433d4fb86b}\label{class_weather_widget_abce378d53f41ebe5739a85433d4fb86b}} 
+{\bfseries Weather\+Widget} (std\+::string, int, std\+::string, std\+::string, char)
+\item 
+\mbox{\hyperlink{class_weather_widget_a1550f9b797beb612bc9346de32866735}{$\sim$\+Weather\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default empty destructor for Weather Widget  Destroys Weather Widget in memory  Takes no parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_a5127020f0dd4df0d2d64c7c2a6da2ae5}{get\+Weather\+Widget\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the name of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_weather_widget_abaa5920ec25ec5981d2c1f347550acf4}{get\+Weather\+Widget\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Returns the ID of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the ID of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_a1c31534566187d4dfc82014ac123ebcb}{get\+Weather\+Widget\+Country}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s set country of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the user\textquotesingle{}s set country of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_adb2d06c824ce9ad1f3c7a52bbe609177}{get\+Weather\+Widget\+City}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_weather_widget_ad28175371be3fdbcdcbc221e0fd3d926}{get\+Type\+Of\+Forecast}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_aeb1d38f52ab208d41c1cd52a09780f75}{get\+Type\+Of\+Forecast\+Long}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s type of forecast from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  Returns the friendly name for the type of forecast the user selected. This standardizes the output to by \char`\"{}\+Five-\/\+Day\char`\"{} or \char`\"{}\+Current\char`\"{}  No parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weather_widget_ab885c934a45715452fa70fcf4060b061}\label{class_weather_widget_ab885c934a45715452fa70fcf4060b061}} 
+std\+::string {\bfseries get\+Icon} ()
+\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_a1d7fc69f16f114b5bcc82b09dbb359cf}{weather\+A\+P\+I\+Call\+Results}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Calls the weather\+A\+PI and stores the results in a string  Utilizes C\+U\+RL to pull weather data from the open\+Weather A\+PI and store in in a string to be returned. Uses the user\textquotesingle{}s input country and city to put in the U\+RL.  string weather\+Widget\+Country, string weather\+Widget\+City. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_a2ce2729ca424ece9ad9eff074d76f5a1}{get\+Weather\+Temperature}} ()
+\begin{DoxyCompactList}\small\item\em Returns the temperature from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the temperature from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (temperature)  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_ae1ed8db845a67b1471ea78748a75c748}{get\+Weather\+Temperatures}} (int)
+\begin{DoxyCompactList}\small\item\em Returns the temperatures from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results for the day input by the user  Returns the temperature from the A\+P\+I\+Call\+Results based on which day the user would like, the day represents the days from now in the five day forecast -\/ for example, if 5 is input it will pull the temperature for 5 days from now through the weather\+Data variable and only picking out what string information is relevant (temperature)  int day. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_aacd35e452cf154b858144de80862334f}{get\+Weather\+Condition\+Emoji}} ()
+\begin{DoxyCompactList}\small\item\em Returns the weather condition from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the weather condition from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (condition) as well, this function will produce a glyph or emoji representation of the weather on supported terminals (like mac\+OS)  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_ac46edf497f42b64982707a3886b28b4d}{get\+Weather\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Returns the weather condition from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the weather condition from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (condition)  No parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weather_widget_a2d1c33c6a51b5f2bf28cbcb6487007c8}{get\+Weather\+Conditions}} (int day)
+\begin{DoxyCompactList}\small\item\em Returns the weather conditions from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results for the day input by the user  Returns the weather conditions from the A\+P\+I\+Call\+Results based on which day the user would like, the day represents the days from now in the five day forecast -\/ for example, if 5 is input it will pull the weather conditions for 5 days from now through the weather\+Data variable and only picking out what string information is relevant (weather conditions)  int day. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_widget_acf4d5ed2d0e64b6a05351883e605ec23}{print\+Weather\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Prints the weather information pulled from the A\+PI for use in testing  Returns the weather information like temperature and conditions that are from the A\+PI calls  none. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class containing the public functions and private variables in the Weather Widget objects  An overview of the structures behind the Weather\+Widget.\+cpp file  Takes multiple -\/ outlined in the Weather\+Widget.\+cpp documentation. 
+
+\begin{DoxyReturn}{Returns}
+Many (see Weather\+Widget.\+cpp for more information) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weather_widget_a671797f620c32b858c7746e4f8dd3a82}\label{class_weather_widget_a671797f620c32b858c7746e4f8dd3a82}} 
+\index{Weather\+Widget@{Weather\+Widget}!Weather\+Widget@{Weather\+Widget}}
+\index{Weather\+Widget@{Weather\+Widget}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{Weather\+Widget()}{WeatherWidget()}}
+{\footnotesize\ttfamily Weather\+Widget\+::\+Weather\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty constructor for Weather Widget  Creates an empty Weather Widget as the default widget configuration  Takes no parameters. 
+
+\begin{DoxyReturn}{Returns}
+An Empty Weather Widget 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_a1550f9b797beb612bc9346de32866735}\label{class_weather_widget_a1550f9b797beb612bc9346de32866735}} 
+\index{Weather\+Widget@{Weather\+Widget}!````~Weather\+Widget@{$\sim$\+Weather\+Widget}}
+\index{````~Weather\+Widget@{$\sim$\+Weather\+Widget}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{$\sim$\+Weather\+Widget()}{~WeatherWidget()}}
+{\footnotesize\ttfamily Weather\+Widget\+::$\sim$\+Weather\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default empty destructor for Weather Widget  Destroys Weather Widget in memory  Takes no parameters. 
+
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weather_widget_ad28175371be3fdbcdcbc221e0fd3d926}\label{class_weather_widget_ad28175371be3fdbcdcbc221e0fd3d926}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Type\+Of\+Forecast@{get\+Type\+Of\+Forecast}}
+\index{get\+Type\+Of\+Forecast@{get\+Type\+Of\+Forecast}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Type\+Of\+Forecast()}{getTypeOfForecast()}}
+{\footnotesize\ttfamily char Weather\+Widget\+::get\+Type\+Of\+Forecast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Weather Widget\textquotesingle{}s user\textquotesingle{}s set city 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_aeb1d38f52ab208d41c1cd52a09780f75}\label{class_weather_widget_aeb1d38f52ab208d41c1cd52a09780f75}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Type\+Of\+Forecast\+Long@{get\+Type\+Of\+Forecast\+Long}}
+\index{get\+Type\+Of\+Forecast\+Long@{get\+Type\+Of\+Forecast\+Long}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Type\+Of\+Forecast\+Long()}{getTypeOfForecastLong()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Type\+Of\+Forecast\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the user\textquotesingle{}s type of forecast from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  Returns the friendly name for the type of forecast the user selected. This standardizes the output to by \char`\"{}\+Five-\/\+Day\char`\"{} or \char`\"{}\+Current\char`\"{}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Weather Widget\textquotesingle{}s type of forecast 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_ac46edf497f42b64982707a3886b28b4d}\label{class_weather_widget_ac46edf497f42b64982707a3886b28b4d}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Condition@{get\+Weather\+Condition}}
+\index{get\+Weather\+Condition@{get\+Weather\+Condition}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Condition()}{getWeatherCondition()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the weather condition from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the weather condition from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (condition)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the weather\+Condition with Emoji for use in the weather widget (this is for the current forecast) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_aacd35e452cf154b858144de80862334f}\label{class_weather_widget_aacd35e452cf154b858144de80862334f}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Condition\+Emoji@{get\+Weather\+Condition\+Emoji}}
+\index{get\+Weather\+Condition\+Emoji@{get\+Weather\+Condition\+Emoji}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Condition\+Emoji()}{getWeatherConditionEmoji()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Condition\+Emoji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the weather condition from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the weather condition from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (condition) as well, this function will produce a glyph or emoji representation of the weather on supported terminals (like mac\+OS)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the weather\+Condition with Emoji for use in the weather widget (this is for the current forecast) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_a2d1c33c6a51b5f2bf28cbcb6487007c8}\label{class_weather_widget_a2d1c33c6a51b5f2bf28cbcb6487007c8}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Conditions@{get\+Weather\+Conditions}}
+\index{get\+Weather\+Conditions@{get\+Weather\+Conditions}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Conditions()}{getWeatherConditions()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Conditions (\begin{DoxyParamCaption}\item[{int}]{day }\end{DoxyParamCaption})}
+
+
+
+Returns the weather conditions from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results for the day input by the user  Returns the weather conditions from the A\+P\+I\+Call\+Results based on which day the user would like, the day represents the days from now in the five day forecast -\/ for example, if 5 is input it will pull the weather conditions for 5 days from now through the weather\+Data variable and only picking out what string information is relevant (weather conditions)  int day. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the weather conditions from a specific day out of the 5 day forecast (this is for the 5 day forecast) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_a2ce2729ca424ece9ad9eff074d76f5a1}\label{class_weather_widget_a2ce2729ca424ece9ad9eff074d76f5a1}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Temperature@{get\+Weather\+Temperature}}
+\index{get\+Weather\+Temperature@{get\+Weather\+Temperature}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Temperature()}{getWeatherTemperature()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the temperature from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results  Returns the temperature from the A\+P\+I\+Call\+Results string by traversing through the weather\+Data variable and only picking out what string information is relevant (temperature)  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the temperature for use in the weather widget (this is for the current forecast) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_ae1ed8db845a67b1471ea78748a75c748}\label{class_weather_widget_ae1ed8db845a67b1471ea78748a75c748}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Temperatures@{get\+Weather\+Temperatures}}
+\index{get\+Weather\+Temperatures@{get\+Weather\+Temperatures}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Temperatures()}{getWeatherTemperatures()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Temperatures (\begin{DoxyParamCaption}\item[{int}]{day }\end{DoxyParamCaption})}
+
+
+
+Returns the temperatures from the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}\textquotesingle{}s A\+PI Call results for the day input by the user  Returns the temperature from the A\+P\+I\+Call\+Results based on which day the user would like, the day represents the days from now in the five day forecast -\/ for example, if 5 is input it will pull the temperature for 5 days from now through the weather\+Data variable and only picking out what string information is relevant (temperature)  int day. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the temperature from a specific day out of the 5 day forecast (this is for the 5 day forecast) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_adb2d06c824ce9ad1f3c7a52bbe609177}\label{class_weather_widget_adb2d06c824ce9ad1f3c7a52bbe609177}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Widget\+City@{get\+Weather\+Widget\+City}}
+\index{get\+Weather\+Widget\+City@{get\+Weather\+Widget\+City}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Widget\+City()}{getWeatherWidgetCity()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Widget\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the user\textquotesingle{}s set city of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Weather Widget\textquotesingle{}s user\textquotesingle{}s set city 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_a1c31534566187d4dfc82014ac123ebcb}\label{class_weather_widget_a1c31534566187d4dfc82014ac123ebcb}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Widget\+Country@{get\+Weather\+Widget\+Country}}
+\index{get\+Weather\+Widget\+Country@{get\+Weather\+Widget\+Country}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Widget\+Country()}{getWeatherWidgetCountry()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Widget\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the user\textquotesingle{}s set country of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the user\textquotesingle{}s set country of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Weather Widget\textquotesingle{}s user\textquotesingle{}s set country 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_abaa5920ec25ec5981d2c1f347550acf4}\label{class_weather_widget_abaa5920ec25ec5981d2c1f347550acf4}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Widget\+ID@{get\+Weather\+Widget\+ID}}
+\index{get\+Weather\+Widget\+ID@{get\+Weather\+Widget\+ID}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Widget\+I\+D()}{getWeatherWidgetID()}}
+{\footnotesize\ttfamily int Weather\+Widget\+::get\+Weather\+Widget\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the ID of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the ID of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Weather Widget\textquotesingle{}s ID 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_a5127020f0dd4df0d2d64c7c2a6da2ae5}\label{class_weather_widget_a5127020f0dd4df0d2d64c7c2a6da2ae5}} 
+\index{Weather\+Widget@{Weather\+Widget}!get\+Weather\+Widget\+Name@{get\+Weather\+Widget\+Name}}
+\index{get\+Weather\+Widget\+Name@{get\+Weather\+Widget\+Name}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{get\+Weather\+Widget\+Name()}{getWeatherWidgetName()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::get\+Weather\+Widget\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  A getter function to return the name of the \mbox{\hyperlink{class_weather_widget}{Weather\+Widget}}  No parameters. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the Weather Widget\textquotesingle{}s name 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_acf4d5ed2d0e64b6a05351883e605ec23}\label{class_weather_widget_acf4d5ed2d0e64b6a05351883e605ec23}} 
+\index{Weather\+Widget@{Weather\+Widget}!print\+Weather\+Information@{print\+Weather\+Information}}
+\index{print\+Weather\+Information@{print\+Weather\+Information}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{print\+Weather\+Information()}{printWeatherInformation()}}
+{\footnotesize\ttfamily void Weather\+Widget\+::print\+Weather\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the weather information pulled from the A\+PI for use in testing  Returns the weather information like temperature and conditions that are from the A\+PI calls  none. 
+
+\begin{DoxyReturn}{Returns}
+void. Prints to the screen the results of getting the temperature and weather conditions using the other functions in the class. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_weather_widget_a1d7fc69f16f114b5bcc82b09dbb359cf}\label{class_weather_widget_a1d7fc69f16f114b5bcc82b09dbb359cf}} 
+\index{Weather\+Widget@{Weather\+Widget}!weather\+A\+P\+I\+Call\+Results@{weather\+A\+P\+I\+Call\+Results}}
+\index{weather\+A\+P\+I\+Call\+Results@{weather\+A\+P\+I\+Call\+Results}!Weather\+Widget@{Weather\+Widget}}
+\subsubsection{\texorpdfstring{weather\+A\+P\+I\+Call\+Results()}{weatherAPICallResults()}}
+{\footnotesize\ttfamily string Weather\+Widget\+::weather\+A\+P\+I\+Call\+Results (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Calls the weather\+A\+PI and stores the results in a string  Utilizes C\+U\+RL to pull weather data from the open\+Weather A\+PI and store in in a string to be returned. Uses the user\textquotesingle{}s input country and city to put in the U\+RL.  string weather\+Widget\+Country, string weather\+Widget\+City. 
+
+\begin{DoxyReturn}{Returns}
+A string with the block of text containing the weather\+A\+PI results for the country and city the user is in. Returns errors depending on the issues that could be faced. For example, an error is returned if the network is not connected, and also if the city / country information is incorrect. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mitch Mancuso 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+Widget.\+h\item 
+Weather\+Widget.\+cpp\end{DoxyCompactItemize}
